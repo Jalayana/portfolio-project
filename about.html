@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn more about Jalayana Miller, a creative front-end developer with a passion for clean code, intuitive design, and bringing ideas to life through HTML, CSS, and JavaScript."
+    />
     <title>About Jalayana Miller</title>
 
     <link
@@ -30,7 +34,35 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="content-container">
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+            src="images/logo-cartoon.png"
+            class="logo d-none d-md-block"
+            alt="Jalayana's logo"
+            title="Homepage"
+          />
+          <img
+            src="images/logo-small.png"
+            class="logo d-block d-md-none"
+            alt="Jalayana's logo"
+            title="Homepage"
+          />
+        </a>
+        <ul>
+          <li><a href="/" title="Homepage">Home</a></li>
+          <li class="active">
+            <a href="/about.html" title="About Jalayana">About</a>
+          </li>
+          <li><a href="/work.html" title="Jalayana's Work">Work </a></li>
+          <li>
+            <a href="/contact.html" title="Jalayana's Contact Info">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
           <div class="content">
@@ -43,7 +75,7 @@
               I've been learning how to code for about a year through the
               programs that the SheCodes organization offers.
             </p>
-            <a href="#" class="btn btn-branding">View my projects</a>
+            <a href="/work.html" class="btn btn-branding">View my projects</a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -54,6 +86,61 @@
           />
         </div>
       </div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Info"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:jalayana.miller@gmail.com"
+            class="email-link"
+            title="Email Jalayana"
+            >jalayana.miller@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https:www.facebook.com/jalayana"
+            target="_blank"
+            title="Jalayana's Facebook Page"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jalayana-miller-87b2929b/"
+            target="_blank"
+            title="Jalayana's Linkedin Page"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https:www.github.com/jalayana"
+            target="_blank"
+            title="Jalayana's GitHub Profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          This project was coded by Jalayana Miller and it is
+          <a href="https://github.com/Jalayana/portfolio-project"
+            >open-sourced.</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>

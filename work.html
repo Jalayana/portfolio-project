@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse a collection of interactive apps and responsive websites created by Jalayana Miller. See real-world examples of HTML, CSS, JavaScript, and Bootstrap in action"
+    />
     <title>My Projects</title>
 
     <link
@@ -30,47 +34,98 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+            src="images/logo-cartoon.png"
+            class="logo d-none d-md-block"
+            alt="Jalayana's logo"
+            title="Homepage"
+          />
+          <img
+            src="images/logo-small.png"
+            class="logo d-block d-md-none"
+            alt="Jalayana's logo"
+            title="Homepage"
+          />
+        </a>
+        <ul>
+          <li><a href="/" title="Homepage">Home</a></li>
+          <li><a href="/about.html" title="About Jalayana">About</a></li>
+          <li class="active">
+            <a href="/work.html" title="Jalayana's Work">Work </a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Jalayana's Contact Info">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
-        <h1 class="mb-5">Take a look at what I've been working on!</h1>
+        <h1 class="mb-5 text-center">
+          Take a look at what I've been working on!
+        </h1>
         <div class="row">
           <div class="col-md-6 mb-4">
-            <img
-              src="images/my-ai-recipe-app.png"
-              class="img-fluid mb-3 rounded"
-              alt=""
-            />
+            <a
+              href="https://ai-generator-recipe-project.netlify.app"
+              target="_blank"
+            >
+              <img
+                src="images/my-ai-recipe-app.png"
+                class="work-image img-fluid mb-3 rounded"
+                alt="Recipe Project Preview"
+                title="Visit the Recipe Generator"
+              />
+            </a>
             <h3 class="text-center m-0">Recipe App</h3>
             <p class="text-center text-muted">Built with HTML, CSS, and AI</p>
           </div>
           <div class="col-md-6 mb-4">
-            <img
-              src="images/my-weather-app.png"
-              class="img-fluid mb-3 rounded"
-              alt=""
-            />
+            <a href="https://new-weather-project.netlify.app/" target="_blank">
+              <img
+                src="images/my-weather-app.png"
+                class="work-image img-fluid mb-3 rounded"
+                alt="Weather App Project Preview"
+                title="Visit the Weather App"
+              />
+            </a>
             <h3 class="text-center m-0">Weather App</h3>
             <p class="text-center text-muted">
               Built with HTML, CSS, and JavaScript
             </p>
           </div>
           <div class="col-md-6 mb-4">
-            <img
-              src="images/croissant-webpage.png"
-              class="img-fluid mb-3 rounded"
-              alt=""
-            />
+            <a
+              href="https://croissant-project-multiple.netlify.app"
+              target="_blank"
+            >
+              <img
+                src="images/croissant-webpage.png"
+                class="work-image img-fluid mb-3 rounded"
+                alt="Croissant Webpage Preview"
+                title="Visit the Croissant Webpage"
+              />
+            </a>
             <h3 class="text-center m-0">Croissant Webpage</h3>
             <p class="text-center text-muted">
               Built with Bootstap, HTML, and CSS
             </p>
           </div>
           <div class="col-md-6 mb-4">
-            <img
-              src="images/my-world-clock-app.png"
-              class="img-fluid mb-3 rounded"
-              alt=""
-            />
+            <a
+              href="https://worldwide-time-project.netlify.app/"
+              target="_blank"
+            >
+              <img
+                src="images/my-world-clock-app.png"
+                class="work-image img-fluid mb-3 rounded"
+                alt="World Clock Project Preview"
+                title="Visit World Clock App"
+              />
+            </a>
             <h3 class="text-center m-0">World Clock App</h3>
             <p class="text-center text-muted">
               Built with HTML, CSS, and JavaScript
@@ -78,6 +133,61 @@
           </div>
         </div>
       </div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Info"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:jalayana.miller@gmail.com"
+            class="email-link"
+            title="Email Jalayana"
+            >jalayana.miller@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/jalayana-miller-87b2929b/"
+            target="_blank"
+            title="Jalayana's Linkedin Page"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https:www.github.com/jalayana"
+            target="_blank"
+            title="Jalayana's GitHub Profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https:www.facebook.com/jalayana"
+            target="_blank"
+            title="Jalayana's Facebook Page"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          This project was coded by Jalayana Miller and it is
+          <a href="https://github.com/Jalayana/portfolio-project"
+            >open-sourced.</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>
