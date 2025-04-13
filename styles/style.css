@@ -100,6 +100,37 @@ p {
   padding: 120px 60px;
 }
 
+.logo {
+  max-height: 60px;
+}
+
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 62px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+  font-weight: 800;
+  transition: all 100ms ease-in-out;
+}
+
 @media (max-width: 960px) {
   .hero {
     padding: 80px 20px;
@@ -123,4 +154,8 @@ p {
     padding: 0;
     text-align: center;
   }
+}
+
+nav a {
+  font-size: 14px;
 }
